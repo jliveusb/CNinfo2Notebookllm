@@ -254,7 +254,7 @@ class CnInfoDownloader:
             return False
 
         if report_type == "semi":
-            return "半年度报告" in title or "中期报告" in title
+            return "半年度报告" in title or "半年报" in title or "中期报告" in title
         elif report_type == "q1":
             return "一季度" in title or "第一季度" in title
         elif report_type == "q3":
